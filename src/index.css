@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Switzer;
+  src: url("./fonts/Switzer.woff2");
+}
+
+progress {
+  border-radius: 50px;
+  width: 100%;
+  height: 10px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #e0aaff;
+  border-radius: 50px;
+  transition: width 0.1s linear;
+}
+
+progress::-webkit-progress-value {
+  background-color: #5a189a;
+  border-radius: 50px;
+  transition: width 0.1s linear;
+}
+
+@theme {
+  --shadow-quiz: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  --font-switzer: "Switzer", "sans-serif";
+  --color-blackk: #10002b;
+  --color-prussian-blue: #240046;
+  --color-chinese-violet: #3c096c;
+  --color-oxford-blue: #011936;
+  --color-charcoal: #e0aaff;
+  --color-cambrige-blue: #5a189a;
+}
